@@ -2,15 +2,6 @@
 
 A lightweight PowerShell script to recursively scan directories and extract developer/publisher information from DLL files.
 
-## 🚀 Features
-
-- **Recursive Directory Scanning** - Automatically searches through all subdirectories
-- **Developer Identification** - Extracts company/publisher information from DLL metadata
-- **Color-Coded Output** - Visual distinction between known, unknown, and Microsoft DLLs
-- **Error Handling** - Gracefully handles corrupted or inaccessible DLL files
-- **No Dependencies** - Uses built-in Windows PowerShell capabilities
-- **Fast Execution** - Optimized for quick scanning of large directory structures
-
 ## 📋 Requirements
 
 - Windows PowerShell (built-in on Windows)
@@ -57,6 +48,15 @@ Total DLLs found: 5
 ```
 
 
+
+## 🚀 Features
+
+- **Recursive Directory Scanning** - Automatically searches through all subdirectories
+- **Developer Identification** - Extracts company/publisher information from DLL metadata
+- **Color-Coded Output** - Visual distinction between known, unknown, and Microsoft DLLs
+- **Error Handling** - Gracefully handles corrupted or inaccessible DLL files
+- **No Dependencies** - Uses built-in Windows PowerShell capabilities
+- **Fast Execution** - Optimized for quick scanning of large directory structures
 
 
 ## 🛠️ Troubleshooting
