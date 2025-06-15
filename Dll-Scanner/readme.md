@@ -17,30 +17,32 @@ A lightweight PowerShell script to recursively scan directories and extract deve
 - No additional dependencies required
 
 ### Basic Command
-\`\`\`powershell
+```powershell
 powershell -ExecutionPolicy Bypass -File "Dll_Scanner.ps1" "Folder-Path"
-\`\`\`
+```
 
 ### Examples
 
 **Scan Program Files:**
-\`\`\`powershell
+```powershell
 powershell -ExecutionPolicy Bypass -File "Dll_Scanner.ps1" "C:\\Program Files\\MyApplication"
-\`\`\`
+```
 
 **Scan System32 Directory:**
-\`\`\`powershell
+```powershell
 powershell -ExecutionPolicy Bypass -File "Dll_Scanner.ps1" "C:\\Windows\\System32"
-\`\`\`
+```
 
 **Scan Current Directory:**
-\`\`\`powershell
+```powershell
 powershell -ExecutionPolicy Bypass -File "Dll_Scanner.ps1" "."
-\`\`\`
+```
+
+![Dll_Scanner](https://github.com/user-attachments/assets/b9c62c66-c5d9-4bb6-9879-2062bdf7aa8d)
 
 ## 📊 Sample Output
 
-\`\`\`
+```
 Scanning DLLs in: C:\\Program Files\\MyApp
 
 DLL Name                                 Developer
@@ -52,7 +54,9 @@ third_party.dll                         Adobe Systems Incorporated
 myapp_core.dll                          MyCompany Inc.
 
 Total DLLs found: 5
-\`\`\`
+```
+
+
 
 
 ## 🛠️ Troubleshooting
@@ -60,25 +64,27 @@ Total DLLs found: 5
 ### Execution Policy Error [If you're searching in the System directory, make sure to open PowerShell with administrative privileges.]
 If you encounter execution policy restrictions:
 
-\`\`\`powershell
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-\`\`\`
+```
 
 ### Alternative Execution Methods
 
 **Method 1 - Using & operator:**
-\`\`\`powershell
+```powershell
 & ".\\Dll_Scanner.ps1" "C:\\Your\\Path"
-\`\`\`
+```
 
 **Method 2 - Navigate to script directory:**
-\`\`\`powershell
+```powershell
 cd "C:\\Path\\To\\Script"
 .\\Dll_Scanner.ps1 "C:\\Target\\Directory"
-\`\`\`
+```
 
 **Method 3 - Interactive mode:**
 Simply double-click the script file and enter the path when prompted.
+
+
 
 ## 📁 Use Cases
 
