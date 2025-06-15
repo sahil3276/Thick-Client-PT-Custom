@@ -16,11 +16,14 @@ A lightweight PowerShell script to scan `.exe` and `.dll` files for entropy, hel
 ```powershell
 & "entropy.ps1" -File "C:\Path\to\file.dll"
 ```
+![image](https://github.com/user-attachments/assets/5a55b056-4a40-47a2-9c2e-c0cc00e12326)
+
 
 ### 🔸 Scan an entire directory (recursive)
 ```powershell
 & "entropy.ps1" -Directory "C:\Path\to\folder"
 ```
+![image](https://github.com/user-attachments/assets/f10a40f5-7f07-4720-bce7-779013e2c18f)
 
 ## 📋 Output Example
 
